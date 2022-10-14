@@ -1,5 +1,7 @@
 .join {
 
+  
+
   &__title {
       font-size: 14px;
       text-transform: uppercase;
@@ -14,6 +16,7 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+
     @media screen and (min-width:1200px) {
       justify-content: flex-start;
       margin-left: 0;
