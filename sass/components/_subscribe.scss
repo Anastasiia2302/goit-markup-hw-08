@@ -1,7 +1,8 @@
+
 .subscribe{
 
    &__title {display: block;
-    margin-left: 93px;
+    margin-left: auto;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -9,12 +10,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color);}
+    @media screen and (min-width:1200px) {margin-left: 93px;}
     
   &__input {
      display: inline-flex;
      align-items: center;
-     margin-left: 93px;
-     margin-right: 12px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20px;
      width: 358px;
      height: 50px;
      background-color: var(--background-color);
@@ -27,7 +30,13 @@
      line-height: 1.25;
      font-weight: 400;
      font-size: 16px;
-     color:var(--text-color)};
+     color:var(--text-color);
+     @media screen  and (min-width:1200px) {
+      margin-right: 12px;
+      
+     }}
+
+    
   &__button {
     display: inline-flex;
     align-items: center;
@@ -47,6 +56,8 @@
              &:hover {background-color: #188CE8};
              &:focus {background-color: #188CE8};
 }
+
+  
    &__text {
      font-weight: 700;
      font-size: 16px;
