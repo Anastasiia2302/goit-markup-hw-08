@@ -14,8 +14,9 @@
   @media screen and (min-width:768px) {
   display: flex;
   align-items: center;
+  padding:12px 0;}
   &__logo {
-    margin-right: 93px;
+    margin-right: 87px;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -30,8 +31,11 @@
   }
   &__list {
     display: flex;
+    
       
-  }
+    }
+      
+  
  &__item:not(:last-child) {
         margin-right: 50px;
       }
@@ -48,8 +52,11 @@
     &:focus {color:var(--also-text-color); }
   }
   &__contact{
+   
+@media screen and (min-width:1200px) {
     display: flex;
-    margin-left: auto;
+    margin-left: auto;}
+
     }
   &__contact-list:not(:first-child) {
     margin-left: 50px;}
@@ -57,7 +64,8 @@
   &__contact-link {
     display: flex;
     align-items:center;
-    padding: 32px 0;
+    padding: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -65,11 +73,16 @@
     color:var(--second-color-text);
     fill:var(--second-color-text);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   
     &:hover { fill: var(--also-text-color);
       color: var(--also-text-color);
     }
     &:focus { fill: var(--also-text-color);
       color: var(--also-text-color);}
+   @media screen and (min-width:1200px) {
+        padding: 32px 0;
+      margin-bottom: 0;}
   }
     &__icon {
       margin-right: 10px;
@@ -81,7 +94,7 @@
       &:focus { fill: var(--also-text-color);
                 color: var(--also-text-color);}
   }
-}}
+}
 
 .site-nav__link-current { 
   display: none;
@@ -98,4 +111,4 @@
   height: 4px;
   background: var(--also-text-color);
   border-radius: 2px; }
-}
+} 

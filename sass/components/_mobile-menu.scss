@@ -88,7 +88,7 @@ text-decoration: none;}
     display: flex;
 margin-left: 40px;
 }
-.mobile-social__item::after {
+.mobile-social__item:not(:last-child)::after {
 content: "";
 border: 1px solid rgba(33, 33, 33, 0.2);
 transform: rotate(90deg);
@@ -96,6 +96,7 @@ transform: rotate(90deg);
 }
 .mobile-social__item:not(:last-child) {margin-right: 10px;}
 .mobile-social__link {
+    margin-right: 10px;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;

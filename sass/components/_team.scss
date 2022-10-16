@@ -1,93 +1,108 @@
 
-// .team {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//     background-color: var(--second-background-color);
-
-//     &__title {
-//       text-align: center;
-//       margin-bottom: 50px;
-//       color: var(--primary-text-color);
-//       font-size: 36px;
-//       font-weight: 700;
-//       line-height: 1.17;
-//     }
-
-//     &__list {
-//       display: flex;
-//       text-align: center;
-//     }
-//   &__item{
-//     display: block;
-//     margin-right: 30px;
-//     &:nth-child(4n) {
-//       margin-right: 0;
-//     }
-//   }
-//   &__image {
-//     display: block;
-//   }
-//   &__about {
-//     padding: 30px 0;
+.team {
   
-//     background-color: var(--primary-background-color);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//       0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//   }
-//   &__name {
-//     display: block;
-//     font-size: 16px;
-//     font-weight: 500;
-//     line-height: 1.17;
-//     letter-spacing: 0.03em;
-//     margin-bottom: 10px;
-//   }
-//   &__text {
-//     display: block;
-//     color: var(--second-color-text);
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 1.17;
-//   }
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--second-background-color);
 
-//   }
+    &__title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--primary-text-color);
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.17;
+    }
+
+    &__list {
+      text-align: center;
+      
+      @media screen and (min-width:768px)  {
+      display: flex;
+      flex-wrap: wrap;
+      }
+      @media screen and (min-width:1200px){
+        flex-wrap: nowrap;
+      }
+    }
+   
+  &__item{
+    display: block;
+    margin-bottom: 30px;
+@media screen and (min-width:768px) and (max-width:1199px){
+      margin-right: 30px;
+      
+      &:nth-child(2n) {margin-right: 0;}
+}
+    @media screen and (min-width:1200px) {
+      margin-right: 30px;
+      
+      &:nth-child(4n) {margin-right: 0;}}
+   
+  }
+  &__image {
+    display: block;
+  }
+  &__about {
+    padding: 30px 0;
+  background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__text {
+    display: block;
+    color: var(--second-color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+
+  }
  
   
-//   .team__contact {
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 16px;
-//     margin-left: 32px;
-//     margin-right: 32px;
-//   }
-//   .team__contact-list {
-//     display: flex;
-//     margin-right: 10px;
-//     border-radius: 50%;
+  .team__contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .team__contact-list {
+    display: flex;
+    margin-right: 10px;
+    border-radius: 50%;
    
-//   }
-//   .team__contact-list:nth-child(4) {
-//     margin-right: 0px;
-//   }
+  }
+  .team__contact-list:nth-child(4) {
+    margin-right: 0px;
+  }
   
-//   .team__contact__link {
-//     fill: #afb1b8;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 44px;
-//     height: 44px;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     border-radius: 50%;
-//   }
-//   .team__contact__link:hover {
-//     fill: var(--second-background-color);
-//     background-color: var(--also-text-color);
-//     border-radius: 50%;
-//   }
-//   .team__contact__link:focus {fill:var(--text-color);
-//     background-color: var(--also-text-color);
-//     border-radius: 50%;
-//   }
-//   .team__contact-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  .team__contact__link {
+    fill: #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+  }
+  .team__contact__link:hover {
+    fill: var(--second-background-color);
+    background-color: var(--also-text-color);
+    border-radius: 50%;
+  }
+  .team__contact__link:focus {fill:var(--text-color);
+    background-color: var(--also-text-color);
+    border-radius: 50%;
+  }
+  .team__contact-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
