@@ -70,11 +70,18 @@ body {
 .site-nav {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav {
     display: flex;
     align-items: center;
     padding: 12px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
   }
 }
 .site-nav__logo {
@@ -116,14 +123,21 @@ body {
 .site-nav__link:focus {
   color: var(--also-text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav__contact {
+    margin-left: 90px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .site-nav__contact {
     display: flex;
     margin-left: auto;
   }
 }
-.site-nav__contact-list:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .site-nav__contact-list:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 .site-nav__contact-link {
   display: flex;
