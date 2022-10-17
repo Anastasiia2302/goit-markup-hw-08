@@ -37,7 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -1357,7 +1357,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 1;
   transform: translateX(100%);
 }
 
