@@ -1,9 +1,9 @@
 
 
 .mobile-menu {
-    height: 60px;
-    display: flex;
-    padding-top: 15px;
+    // height: 60px;
+    // display: flex;
+    // padding-top: 15px;
     
     
     @media screen and (min-width:768px)
@@ -11,6 +11,9 @@
     display:none}
 }
 .mobile {
+    height: 60px;
+    display: flex;
+    padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
