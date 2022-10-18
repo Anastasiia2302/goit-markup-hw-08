@@ -7,12 +7,12 @@
  text-align: center;
 
  @media screen and (min-width:768px) {
-  display: flex;
-  flex-wrap: wrap;
+ 
   
   
  }
   @media screen and (min-width:1200px) {
+    display: flex;
     text-align: start;
     align-items: baseline;
     flex-wrap: nowrap;
@@ -23,8 +23,7 @@
 .footer {
   margin-right: 0;
   margin-bottom: 60px;
-  @media screen and (min-width:768px) {margin-right: 165px;
-    margin-left: 76px;
+  @media screen and (min-width:768px) {
     
   }
 @media  screen and (min-width:1200px) {
@@ -81,4 +80,14 @@
     text-decoration: none;
       &:hover {color:var(--also-text-color)}};
       &:focus {color:var(--also-text-color)}
+}
+.footer-tablet {
+ display: block;
+  @media screen and (min-width:768px) and (max-width:1199px){
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media screen and (min-width:1200px) {display: flex;
+  align-items: baseline;}
 }

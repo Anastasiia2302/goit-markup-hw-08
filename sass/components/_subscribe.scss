@@ -7,16 +7,20 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--text-color);}
+    color: var(--text-color);
+  @media screen and (min-width:1200px)
+  {margin-bottom: 0px;}
+}
     
    @media screen and (min-width:768px) {
-     margin-left: 166px;
+  
      text-align: center;
       
    }
     @media screen and (min-width:1200px)
     {margin-left: 93px;
       text-align: start;
+      
      }
     
     
@@ -74,8 +78,9 @@
              &:focus {background-color: #188CE8};
 
              @media screen and (min-width:768px) {
-               display: block;
+               
                margin:0 auto;
+               
             }
             @media screen and (min-width:1200px) {
                   display: inline-flex;
