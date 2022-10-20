@@ -10,7 +10,8 @@
 .mobile-flex {
     display: flex;
     justify-content: space-between;
-   flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
 }
 .mobile {
     height: 60px;
