@@ -1,7 +1,7 @@
 
 
 .mobile-menu {
-   
+    
     
     @media screen and (min-width:768px)
 {
@@ -36,7 +36,11 @@
     padding: 15px
 
 }
-.mobile-nav {margin-bottom: 302px;
+.mobile-container { 
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;}
+.mobile-nav {
     padding-top: 40px;
     }
 
