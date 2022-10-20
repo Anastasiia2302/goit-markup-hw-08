@@ -1355,6 +1355,12 @@ body {
   }
 }
 
+.mobile-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .mobile {
   height: 60px;
   display: flex;

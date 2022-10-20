@@ -7,7 +7,11 @@
 {
     display:none}
 }
-
+.mobile-flex {
+    display: flex;
+    justify-content: space-between;
+   flex-direction: column;
+}
 .mobile {
     height: 60px;
     display: flex;
@@ -39,6 +43,7 @@
 
 .mobile-nav {
     padding-top: 40px;
+    
     }
 
 .mobile-nav__item {
@@ -67,6 +72,7 @@ margin-bottom:32px }
     transform: translateX(100%);
     
 }  
+
 .menu-container.is-open {
     transform: translateX(0);
     display: block;
