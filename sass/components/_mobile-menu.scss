@@ -33,11 +33,12 @@
     border: none;
     position: absolute;
     right: 0;
-    
+    padding: 15px
 
 }
 .mobile-nav {margin-bottom: 302px;
-    padding-top: 40px;}
+    padding-top: 40px;
+    }
 
 .mobile-nav__item {
 
@@ -63,11 +64,12 @@ margin-bottom:32px }
     background-color: #ffffff;
     position: fixed;
     transform: translateX(100%);
+    
 }  
 .menu-container.is-open {
     transform: translateX(0);
     display: block;
-
+    z-index: 1;
 }
 .mobile-contacts {
     margin-bottom: 64px;
